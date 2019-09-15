@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   color: white;
@@ -10,7 +10,16 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   margin: 20px;
   font-size: 3em;
   font-family: 'Cinzel Decorative', cursive;
+}
+
+#App-video {
+  position: fixed;
+  top: 50%; left: 50%;
+  height: 140%;
+  width: auto;
+  transform: translate(-50%, -50%);
 }
