@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="Site-title ">Lotrsli</div>
+        <div className="Site-title ">LOTRSLI</div>
       </header>
       <br />
       <IconTable />
