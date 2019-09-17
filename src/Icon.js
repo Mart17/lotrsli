@@ -6,11 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Icon extends Component {
   constructor(props) {
     super(props)
-    this.state = { name: props.IconProperties.name,
-                   audio_url: props.IconProperties.audio_url,
-                   isPlaying: false,
-                   volume: 50
-                 }
+    this.audio         = new Audio()
+    this.audio.preload = 'none'
+    this.audio.src     = props.IconProperties.audio_url
+    this.audio.loop    = true
+
+    this.state = { isPlaying: false, volume: 50 }
   }
 
   toggleAudio() {
@@ -20,6 +21,8 @@ class Icon extends Component {
   }
 
   render() {
+    this.state.isPlaying === true ? this.audio.play() : this.audio.pause()
+
     const audioIsPlaying = function(isPlaying) {
       return isPlaying === true ? 'Playing' : 'Muted'
     }
@@ -27,7 +30,7 @@ class Icon extends Component {
     return (
       <div className={audioIsPlaying(this.state.isPlaying)}>
         <FontAwesomeIcon
-          icon={this.state.name}
+          icon={this.props.IconProperties.name}
           size="lg"
           className="Audio-icon"
           onClick={() => this.toggleAudio()}
