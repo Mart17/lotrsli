@@ -3,7 +3,7 @@ import './App.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function IconGroup() {
+function IconTable() {
   const icons = {
     row1: ['music', 'cloud-rain', 'dove'],
     row2: ['hat-wizard', 'fire-alt', 'wind']
@@ -12,20 +12,27 @@ function IconGroup() {
   const displayIcons = (row) => {
     return row.map((iconName) => {
       return (
-        <span className="Icon" key={iconName}>
+        <td className="Icon" key={iconName}>
           <FontAwesomeIcon icon={iconName} size="lg" id={iconName} />
-        </span>
+        </td>
       )
     })
   }
 
   return (
-    <div className="Icon-group">
-      {displayIcons(icons.row1)}
-      <br />
-      {displayIcons(icons.row2)}
+    <div className="table-responsive">
+      <table className="table">
+        <tbody>
+          <tr>
+            {displayIcons(icons.row1)}
+          </tr>
+          <tr>
+            {displayIcons(icons.row2)}
+          </tr>
+        </tbody>
+      </table>
     </div>
   )
 }
 
-export default IconGroup
+export default IconTable

@@ -27,7 +27,7 @@
   transform: translate(-50%, -50%);
 }
 
-.Icon-group {
+.table-responsive {
   max-width: 1200px;
   font-size: 3.5em;
   z-index: 1;
@@ -35,5 +35,12 @@
   position: absolute;
 }
 
+.table {
+
+}
+
 .Icon {
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
