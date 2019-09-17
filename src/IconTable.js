@@ -3,6 +3,8 @@ import './App.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import Icon from './Icon'
+
 function IconTable() {
   const icons = {
     row1: ['music', 'cloud-rain', 'dove'],
@@ -25,6 +27,7 @@ function IconTable() {
         <tbody>
           <tr>
             {displayIcons(icons.row1)}
+            <Icon />
           </tr>
           <tr>
             {displayIcons(icons.row2)}
