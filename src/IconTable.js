@@ -20,7 +20,7 @@ function IconTable() {
   const displayIcons = (row) => {
     return row.map((icon) => {
       return (
-        <td className="Icon">
+        <td className="Icon" key={icon.name}>
           <Icon IconProperties={icon} />
         </td>
       )

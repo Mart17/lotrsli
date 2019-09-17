@@ -28,6 +28,7 @@
   transform: translate(-50%, -50%);
 }
 
+// Table
 .Table-responsive {
   @extend .table-responsive;
   text-align: center;
@@ -45,4 +46,17 @@
   color: #fff;
   position: relative;
   z-index: 1;
+}
+
+// Audio
+.Audio-icon:hover {
+  cursor: pointer;
+}
+
+.Playing {
+  color: #fff;
+}
+
+.Muted {
+  color: rgba(168, 168, 168, 0.7)
 }
