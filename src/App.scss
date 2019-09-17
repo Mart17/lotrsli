@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
+@import '~bootstrap/scss/bootstrap.scss';
 
 .App {
   background-color: #282c34;
@@ -27,16 +28,17 @@
   transform: translate(-50%, -50%);
 }
 
-.table-responsive {
+.Table-responsive {
+  @extend .table-responsive;
+  text-align: center;
   max-width: 1200px;
   font-size: 3.5em;
-  z-index: 1;
   bottom: 0;
   position: absolute;
 }
 
-.table {
-
+.Table {
+  @extend .table;
 }
 
 .Icon {

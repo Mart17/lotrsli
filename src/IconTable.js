@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -20,8 +20,8 @@ function IconTable() {
   }
 
   return (
-    <div className="table-responsive">
-      <table className="table">
+    <div className="Table-responsive">
+      <table className="Table">
         <tbody>
           <tr>
             {displayIcons(icons.row1)}
