@@ -3,46 +3,34 @@ import './App.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import VolumeSlider from './VolumeSlider'
-
 class Icon extends Component {
-  constructor(props) {
-    super(props)
-    this.audio         = new Audio()
-    this.audio.preload = 'none'
-    this.audio.src     = props.IconProperties.audio_url
-    this.audio.loop    = true
+  constructor() {
+    super()
 
-    this.state = { isPlaying: false, volume: 0.5 }
+    this.state = { clicked: false }
   }
 
-  toggleAudio = () => {
+  toggleClicked = () => {
     this.setState((prevState) => ({
-      isPlaying: !prevState.isPlaying
+      clicked: !prevState.clicked
     }))
-  }
 
-  changeVolume = (newVolume) => {
-    this.setState({ volume: newVolume })
+    this.props.toggleAudio()
   }
 
   render() {
-    this.state.isPlaying === true ? this.audio.play() : this.audio.pause()
-    this.audio.volume = this.state.volume
-
-    const audioIsPlaying = function(isPlaying) {
-      return isPlaying === true ? 'Playing' : 'Muted'
+    const isClicked = function(clicked) {
+      return clicked === true ? 'Clicked' : 'Unclicked'
     }
 
     return (
-      <div className={audioIsPlaying(this.state.isPlaying)}>
+      <div className={isClicked(this.state.clicked)}>
         <FontAwesomeIcon
-          icon={this.props.IconProperties.name}
+          icon={this.props.name}
           size="lg"
           className="Audio-icon"
-          onClick={() => this.toggleAudio()}
+          onClick={() => this.toggleClicked()}
         />
-      <VolumeSlider changeVolume={this.changeVolume} />
       </div>
     )
   }

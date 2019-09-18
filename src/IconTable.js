@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.scss'
 
-import Icon from './Icon'
+import IconAudioContainer from './IconAudioContainer'
 
 function IconTable() {
   const icons = {
@@ -21,7 +21,7 @@ function IconTable() {
     return row.map((icon) => {
       return (
         <td className="Icon" key={icon.name}>
-          <Icon IconProperties={icon} />
+          <IconAudioContainer IconProperties={icon} />
         </td>
       )
     })
