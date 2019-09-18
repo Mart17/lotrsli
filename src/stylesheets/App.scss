@@ -29,6 +29,10 @@
   transform: translate(-50%, -50%);
 }
 
+.Hidden {
+  display: none;
+}
+
 // Table
 .Table-responsive {
   @extend .table-responsive;
@@ -50,6 +54,10 @@
 }
 
 // Audio
+.Audio-icon {
+  border: 1px solid blue;
+}
+
 .Audio-icon:hover {
   cursor: pointer;
 }

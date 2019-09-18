@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.scss'
+import './stylesheets/App.scss'
 
 import IconAudioContainer from './IconAudioContainer'
 
@@ -20,7 +20,7 @@ function IconTable() {
   const displayIcons = (row) => {
     return row.map((icon) => {
       return (
-        <td className="Icon" key={icon.name}>
+        <td className="Icon" key={icon.name} align="center">
           <IconAudioContainer IconProperties={icon} />
         </td>
       )

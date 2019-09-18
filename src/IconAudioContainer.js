@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './App.scss'
+import './stylesheets/App.scss'
 
 import Icon from './Icon'
 import VolumeSlider from './VolumeSlider'
@@ -32,7 +32,7 @@ class IconAudioContainer extends Component {
     return (
       <div>
         <Icon name={this.props.IconProperties.name} toggleAudio={this.toggleAudio} />
-        <VolumeSlider changeVolume={this.changeVolume} />
+        <VolumeSlider changeVolume={this.changeVolume} hidden={!this.state.isPlaying}/>
       </div>
     )
   }
