@@ -3,6 +3,8 @@ import './App.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import VolumeSlider from './VolumeSlider'
+
 class Icon extends Component {
   constructor(props) {
     super(props)
@@ -35,6 +37,7 @@ class Icon extends Component {
           className="Audio-icon"
           onClick={() => this.toggleAudio()}
         />
+      <VolumeSlider />
       </div>
     )
   }
