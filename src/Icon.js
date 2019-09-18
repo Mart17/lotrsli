@@ -13,17 +13,22 @@ class Icon extends Component {
     this.audio.src     = props.IconProperties.audio_url
     this.audio.loop    = true
 
-    this.state = { isPlaying: false, volume: 50 }
+    this.state = { isPlaying: false, volume: 0.5 }
   }
 
-  toggleAudio() {
+  toggleAudio = () => {
     this.setState((prevState) => ({
       isPlaying: !prevState.isPlaying
     }))
   }
 
+  changeVolume = (newVolume) => {
+    this.setState({ volume: newVolume })
+  }
+
   render() {
     this.state.isPlaying === true ? this.audio.play() : this.audio.pause()
+    this.audio.volume = this.state.volume
 
     const audioIsPlaying = function(isPlaying) {
       return isPlaying === true ? 'Playing' : 'Muted'
@@ -37,7 +42,7 @@ class Icon extends Component {
           className="Audio-icon"
           onClick={() => this.toggleAudio()}
         />
-      <VolumeSlider />
+      <VolumeSlider changeVolume={this.changeVolume} />
       </div>
     )
   }
