@@ -1,4 +1,29 @@
 .Slider-wrapper {
-  border: 1px solid red;
-  height: 100px;
+  margin-top: 10px;
+  height: 0.4em;
+  max-width: 180px;
+}
+
+input[type=range] {
+  vertical-align: top;
+}
+
+
+/* Screen */
+@media screen and (max-width: 960px) {
+  .Slider-wrapper {
+    max-width: 100px;
+  }
+  input[type=range] {
+    max-width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Slider-wrapper {
+    max-width: 50px;
+  }
+  input[type=range] {
+    max-width: 40px;
+  }
 }
