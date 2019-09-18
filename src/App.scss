@@ -34,7 +34,7 @@
   @extend .table-responsive;
   text-align: center;
   max-width: 1200px;
-  font-size: 3.5em;
+  font-size: 5.5em;
   bottom: 0;
   position: absolute;
 }
@@ -60,4 +60,23 @@
 
 .Muted {
   color: rgba(168, 168, 168, 0.7)
+}
+
+/* Screen */
+@media screen and (max-width: 960px) {
+  .Table-responsive {
+    font-size: 3.6em;
+  }
+  .Site-title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Table-responsive {
+    font-size: 3em;
+  }
+  .Site-title {
+    font-size: 1.2em;
+  }
 }
