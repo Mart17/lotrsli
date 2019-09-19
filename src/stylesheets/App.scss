@@ -83,3 +83,21 @@
     font-size: 1.2em;
   }
 }
+
+@media screen and (max-height: 480px) {
+  .Table-responsive {
+    font-size: 3em;
+  }
+  .Site-title {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .Table-responsive {
+    font-size: 2.5em;
+  }
+  .Site-title {
+    font-size: 1em;
+  }
+}
