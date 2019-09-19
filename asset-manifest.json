@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lotrsli/static/css/main.bfd626a6.chunk.css",
-    "main.js": "/lotrsli/static/js/main.eacb3c82.chunk.js",
-    "main.js.map": "/lotrsli/static/js/main.eacb3c82.chunk.js.map",
+    "main.css": "/lotrsli/static/css/main.46fe4ed0.chunk.css",
+    "main.js": "/lotrsli/static/js/main.f13c427a.chunk.js",
+    "main.js.map": "/lotrsli/static/js/main.f13c427a.chunk.js.map",
     "runtime~main.js": "/lotrsli/static/js/runtime~main.63f48616.js",
     "runtime~main.js.map": "/lotrsli/static/js/runtime~main.63f48616.js.map",
     "static/js/2.3cb816ba.chunk.js": "/lotrsli/static/js/2.3cb816ba.chunk.js",
     "static/js/2.3cb816ba.chunk.js.map": "/lotrsli/static/js/2.3cb816ba.chunk.js.map",
     "index.html": "/lotrsli/index.html",
-    "precache-manifest.7bd3879be5140d1d5955c6e5a6d61602.js": "/lotrsli/precache-manifest.7bd3879be5140d1d5955c6e5a6d61602.js",
+    "precache-manifest.37351fd5d41f148ea537acd58fd787a2.js": "/lotrsli/precache-manifest.37351fd5d41f148ea537acd58fd787a2.js",
     "service-worker.js": "/lotrsli/service-worker.js",
-    "static/css/main.bfd626a6.chunk.css.map": "/lotrsli/static/css/main.bfd626a6.chunk.css.map"
+    "static/css/main.46fe4ed0.chunk.css.map": "/lotrsli/static/css/main.46fe4ed0.chunk.css.map"
   }
 }
