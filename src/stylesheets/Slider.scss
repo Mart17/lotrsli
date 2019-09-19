@@ -1,23 +1,23 @@
 .Slider-wrapper {
   margin-top: 10px;
   height: 0.4em;
-  z-index: 1;
 }
-
+ 
 input[type=range] {
-  vertical-align: top;
+  width: 80%;
+  font-size: 0.2em;
 }
 
+// Mozzila
+input[type=range]::-moz-range-track {
 
-/* Screen */
-@media screen and (max-width: 960px) {
-  input[type=range] {
-    max-width: 120px;
-  }
 }
+input[type=range]::-moz-range-thumb {
 
-@media screen and (max-width: 480px) {
-  input[type=range] {
-    max-width: 80px;
-  }
+}
+input[type=range]:-moz-focusring{
+
+}
+input[type=range]:focus::-moz-range-track {
+
 }

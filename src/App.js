@@ -12,7 +12,6 @@ function App() {
       <header>
         <div className="Site-title ">LOTRSLI</div>
       </header>
-      <br />
       <IconTable />
       <video id="App-video" autoPlay muted loop onContextMenu={(e) => e.preventDefault()}>
         <source src={"https://lotrsli.s3.eu-central-1.amazonaws.com/video/shire_mute.mp4"} type="video/mp4" />

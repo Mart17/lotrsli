@@ -29,7 +29,7 @@ function IconTable() {
 
   return (
     <div className="Table-responsive">
-      <table className="Table">
+      <table className="table">
         <tbody>
           <tr>
             {displayIcons(icons.row1)}
