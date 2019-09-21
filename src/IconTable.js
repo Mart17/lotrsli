@@ -1,19 +1,26 @@
 import React from 'react'
 import './stylesheets/App.scss'
 
+import music   from './audio/shire.mp3';
+import rain    from './audio/rain.mp3';
+import bids    from './audio/birds.mp3';
+import gandalf from './audio/gandalf.mp3';
+import fire    from './audio/fire.mp3';
+import wind    from './audio/wind.mp3';
+
 import IconAudioContainer from './IconAudioContainer'
 
 function IconTable() {
   const icons = {
     row1: [
-            { name: 'music', audio_url: 'https://lotrsli.s3.eu-central-1.amazonaws.com/audio/shire.mp3' },
-            { name: 'cloud-rain', audio_url: 'https://lotrsli.s3.eu-central-1.amazonaws.com/audio/rain.mp3' },
-            { name: 'dove', audio_url: 'https://lotrsli.s3.eu-central-1.amazonaws.com/audio/birds.mp3' }
+            { name: 'music',      audio: music },
+            { name: 'cloud-rain', audio: rain },
+            { name: 'dove',       audio: bids }
           ],
     row2: [
-            { name: 'hat-wizard', audio_url: 'https://lotrsli.s3.eu-central-1.amazonaws.com/audio/gandalf.mp3' },
-            { name: 'fire-alt', audio_url: 'https://lotrsli.s3.eu-central-1.amazonaws.com/audio/fire.mp3' },
-            { name: 'wind', audio_url: 'https://lotrsli.s3.eu-central-1.amazonaws.com/audio/wind.mp3' }
+            { name: 'hat-wizard', audio: gandalf },
+            { name: 'fire-alt',   audio: fire },
+            { name: 'wind',       audio: wind }
           ]
   }
 

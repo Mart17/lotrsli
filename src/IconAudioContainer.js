@@ -9,7 +9,7 @@ class IconAudioContainer extends Component {
     super(props)
     this.audio         = new Audio()
     this.audio.preload = 'none'
-    this.audio.src     = props.IconProperties.audio_url
+    this.audio.src     = props.IconProperties.audio
     this.audio.loop    = true
 
     this.state = { isPlaying: false, volume: 0.5 }
