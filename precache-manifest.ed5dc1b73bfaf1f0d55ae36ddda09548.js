@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f71ccc9a96716b01fff6a4d9ca5a0774",
+    "revision": "c3df43b63076a86c30a948aac3fdfe9c",
     "url": "/lotrsli/index.html"
   },
   {
-    "revision": "889da6c3b4d50047ce06",
-    "url": "/lotrsli/static/css/main.79b109d7.chunk.css"
+    "revision": "bcfcf878659e47f230cc",
+    "url": "/lotrsli/static/css/main.4d8ec53c.chunk.css"
   },
   {
     "revision": "0786906169bbca511320",
     "url": "/lotrsli/static/js/2.62691d23.chunk.js"
   },
   {
-    "revision": "889da6c3b4d50047ce06",
-    "url": "/lotrsli/static/js/main.e08007ef.chunk.js"
+    "revision": "bcfcf878659e47f230cc",
+    "url": "/lotrsli/static/js/main.077f93f8.chunk.js"
   },
   {
     "revision": "ff9140de4386ba82cd8e",
