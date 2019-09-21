@@ -29,6 +29,21 @@
   transform: translate(-50%, -50%);
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  margin: 5px;
+  font-size: 0.8em;
+  font-family: 'Cinzel Decorative', cursive;
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  a:hover { color: inherit; }
+}
+
 .Hidden {
   display: none;
 }

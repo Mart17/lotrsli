@@ -18,6 +18,9 @@ function App() {
       <video id="App-video" autoPlay muted loop onContextMenu={(e) => e.preventDefault()}>
         <source src={video} type="video/mp4" />
       </video>
+      <footer>
+        Made by <a href="https://github.com/Mart17/lotrsli">Martin Suja</a>
+      </footer>
     </div>
   )
 }
