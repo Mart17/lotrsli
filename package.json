@@ -2,7 +2,7 @@
   "name": "lotrsli",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mart17.github.io/lotrsli",
+  "homepage": "/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
